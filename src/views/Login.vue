@@ -1,4 +1,13 @@
 <template>
+<div> 
+      <v-flex xs12>
+        <v-img
+          :src="require('../assets/logo1.png')"
+          class="my-3"
+          contain
+          height="200"
+        ></v-img>
+      </v-flex>
       <v-container
         class="fill-height"
         fluid
@@ -20,7 +29,7 @@
               >
                 <v-toolbar-title>Login form</v-toolbar-title>
                 <v-spacer />
-                <v-tooltip bottom>
+                <!-- <v-tooltip bottom>
                   <template v-slot:activator="{ on }">
                     <v-btn
                       :href="source"
@@ -33,9 +42,9 @@
                     </v-btn>
                   </template>
                   <span>Source</span>
-                </v-tooltip>
-                <v-tooltip right>
-                  <template v-slot:activator="{ on }">
+                </v-tooltip> -->
+                <!-- <v-tooltip right> -->
+                  <!-- <template v-slot:activator="{ on }">
                     <v-btn
                       icon
                       large
@@ -45,9 +54,9 @@
                     >
                       <v-icon>mdi-codepen</v-icon>
                     </v-btn>
-                  </template>
-                  <span>Codepen</span>
-                </v-tooltip>
+                  </template> -->
+                  <!-- <span>Codepen</span>
+                </v-tooltip> -->
               </v-toolbar>
               <v-card-text>
                 <v-form>
@@ -78,6 +87,7 @@
           </v-col>
         </v-row>
       </v-container>
+      </div>
 </template>
 
 <script>
